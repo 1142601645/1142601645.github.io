@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和好</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #ffe8e0 0%, #ffccd5 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 告白卡片 */
+        .confession-card {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(255,180,162,0.3);
+            text-align: center;
+        }
+        /* 标题 */
+        .card-title {
+            font-size: 36px;
+            color: #e5989b;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        /* 告白文字 */
+        .confession-text {
+            font-size: 24px;
+            color: #6d6875;
+            line-height: 2;
+            margin-bottom: 40px;
+            white-space: pre-line; /* 保留换行，方便你排版 */
+        }
+        /* 装饰图片（可选） */
+        .confession-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        /* 小彩蛋按钮 */
+        .love-btn {
+            padding: 15px 40px;
+            background: #ffb4a2;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .love-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(255,180,162,0.3);
+        }
+        /* 响应式适配手机 */
+        @media (max-width: 600px) {
+            .card-title {
+                font-size: 28px;
+            }
+            .confession-text {
+                font-size: 20px;
+            }
+            .confession-card {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="confession-card">
+    <!-- 可选：加一张绝美照片 -->
+    <img src="https://s41.ax1x.com/2025/12/07/pZnkt3Q.jpg" alt="心动瞬间" class="confession-img">
+
+    <!-- 标题 -->
+    <div class="card-title">致我最爱的宝宝💘</div>
+
+    <!-- 核心：替换成你想说的话！！！ -->
+    <div class="confession-text">
+        小宝,在你心情不好的时候没能帮上什么忙,我很抱歉,我没能设身处地的为你着想,但是我绝对是很在意你的情绪的
+        我希望你能够开心一点,你在学校里面受了委屈,我应该抱抱你,应该好好的想想怎么样让你开心一点才对,但是你
+        突如其来的不想听让我情绪上头了,我感觉你把在别的地方受的委屈带到我这里了,但是我现在想想,你怎么会呢
+        一定是你真的很难过了才会这样的,所以我们互相理解一下好不好,我真的害怕我们因为这些许许多多的小事走散
+        善良帅气,温柔体贴的你就原谅小女子吧,球球了
+    </div>
+
+    <!-- 小彩蛋：点击按钮有惊喜 -->
+    <button class="love-btn" id="loveBtn">点击解锁我的小心思</button>
+</div>
+
+<script>
+    // 彩蛋按钮：点击弹出悄悄话
+    const loveBtn = document.getElementById('loveBtn');
+    loveBtn.addEventListener('click', () => {
+        alert('下次见面：\n1. 我请你吃美味的烤肉好不好\n2. 允许你拍我的丑照\n3. 我保证你犯贱的时候不打你\n开心一点嘛,让那些烦人的事都去见鬼吧!!!');
+    });
+</script>
+</body>
+</html>
